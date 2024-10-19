@@ -16,10 +16,18 @@ title_label.place(x=0, y=0, relwidth=1)
 logout_bt = Button(window, text='Logout', font=('david', 15, 'bold'), fg='#53868B')
 logout_bt.place(x=820, y=15)
 
-sub_title_label = Label(window, text='Welcome Admin\t Date: 19-10-2024\t Time: 22:00:00 pm', font=('david', 12, 'bold'), bg='#DCDCDC', fg='#53868B')
+sub_title_label = Label(window, text='Welcome Admin\t Date: 19-10-2024\t Time: 22:00:00 PM', font=('david', 12, 'bold'), bg='#DCDCDC', fg='#53868B')
 sub_title_label.place(x=0, y=70, relwidth=1)
 
 left_frame = Frame(window)
-left_frame.place(x=0, y=102, width=200, height=555)
+left_frame.place(x=0, y=92, width=200, height=410)
+
+lf_image = PhotoImage(file='skills logo lf.png')
+lf_logo = Label(left_frame, image=lf_image)
+lf_logo.pack()
+# lf_logo.grid(row=0, column=0, ipadx=35, ipady=10)
+
+menu_label = Label(left_frame, text='Menu', font=('david', 20),fg='white', bg='#5F9EA0')
+menu_label.pack(fill=X, pady=10)
 
 window.mainloop()
